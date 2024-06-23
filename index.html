@@ -5,7 +5,96 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chipmunk Home Security - Home</title>
     <style>
-        /* (Keep the existing CSS styles) */
+        :root {
+            --dark-orange: #CC5500;
+            --silver: #C0C0C0;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #000080;
+            background-image: 
+                linear-gradient(30deg, #000066 12%, transparent 12.5%, transparent 87%, #000066 87.5%, #000066),
+                linear-gradient(150deg, #000066 12%, transparent 12.5%, transparent 87%, #000066 87.5%, #000066),
+                linear-gradient(30deg, #000066 12%, transparent 12.5%, transparent 87%, #000066 87.5%, #000066),
+                linear-gradient(150deg, #000066 12%, transparent 12.5%, transparent 87%, #000066 87.5%, #000066),
+                linear-gradient(60deg, #00008877 25%, transparent 25.5%, transparent 75%, #00008877 75%, #00008877);
+            background-size: 80px 140px;
+            background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0;
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header {
+            background-color: #000066;
+            color: #ffffff;
+            text-align: center;
+            padding: 1rem;
+            border-bottom: 3px solid var(--silver);
+        }
+        nav {
+            background-color: #000066;
+            color: #ffffff;
+            padding: 0.5rem;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        nav ul li {
+            display: inline-block;
+            margin: 5px;
+        }
+        nav ul li a {
+            color: #ffffff;
+            text-decoration: none;
+            background-color: var(--dark-orange);
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        nav ul li a:hover {
+            background-color: #E25822;
+        }
+        main {
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            flex: 1;
+            background-color: rgba(0, 0, 128, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            border: 1px solid var(--silver);
+        }
+        h2, h3 {
+            color: var(--silver);
+            text-shadow: 1px 1px 2px #000000;
+        }
+        .cta-button {
+            display: inline-block;
+            background-color: var(--dark-orange);
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .cta-button:hover {
+            background-color: #E25822;
+        }
+        footer {
+            background-color: #000066;
+            color: #ffffff;
+            text-align: center;
+            padding: 1rem;
+            width: 100%;
+            border-top: 3px solid var(--silver);
+        }
     </style>
 </head>
 <body>
